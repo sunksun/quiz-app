@@ -445,7 +445,7 @@ function IntroScreen({ onEnter }) {
       >
         <img
           className="intro-poster"
-          src="/Gemini_Generated_Image_kbkuogkbkuogkbku.jpeg"
+          src={`${import.meta.env.BASE_URL}Gemini_Generated_Image_kbkuogkbkuogkbku.jpeg`}
           alt="การแข่งขันตอบปัญหาทางคอมพิวเตอร์ เทคโนโลยีสารสนเทศ และวิทยาการคำนวณ"
         />
       </button>
