@@ -38,8 +38,9 @@ const EXAMPLE_QUESTIONS = {
 // ข้อตัวอย่าง: public/audio/{level}_example.mp3
 function getQuestionAudioPath(level, isReserveRound, idx, showExample) {
   if (!level) return null
-  if (showExample) return `/audio/${level}_example.mp3`
-  return `/audio/${level}_${isReserveRound ? 'reserve' : 'main'}_q${idx + 1}.mp3`
+  const base = import.meta.env.BASE_URL
+  if (showExample) return `${base}audio/${level}_example.mp3`
+  return `${base}audio/${level}_${isReserveRound ? 'reserve' : 'main'}_q${idx + 1}.mp3`
 }
 
 /* ============================================================
